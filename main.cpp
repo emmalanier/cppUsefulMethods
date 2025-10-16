@@ -22,7 +22,7 @@ int main()
   std::getline(std::cin, mstr);
 
   myString myString1(mstr);
-  myString1.setMyStringVar(myString1.lowerToUpper());
+  myString1.setMyStringVar(myString1.upperToLower());
   mstr = myString1.getMyStringVar();
 
 //  mstr = myString1.getMyStringVar();

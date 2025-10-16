@@ -63,3 +63,16 @@ std::string myString::lowerToUpper()
 
   return results;
 }
+
+std::string myString::upperToLower()
+{
+  std::string results;
+  int chainSize = myStringVar.length();
+
+  for (int i=0; i<chainSize; i ++)
+    {
+      results += std::tolower(myStringVar[i]);
+    }
+
+  return results;
+}

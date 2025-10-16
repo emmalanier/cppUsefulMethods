@@ -27,8 +27,8 @@ class myString
     void setMyStringVar(const std::string &);
 
     bool isIn(const std::vector <std::string> &);
-    std::string lowerToUpper();//-32
-    std::string upperToLower();//+32
+    std::string lowerToUpper();
+    std::string upperToLower();
 
 };
 
