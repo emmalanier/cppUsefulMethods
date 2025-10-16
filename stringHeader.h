@@ -10,6 +10,7 @@
 #include <cstdlib>
 #include <string>
 #include <vector>
+#include <cctype>
 
 //CLASS DEFINITION//
 
@@ -26,8 +27,8 @@ class myString
     void setMyStringVar(const std::string &);
 
     bool isIn(const std::vector <std::string> &);
-    std::string lowerToUpper();
-    std::string upperToLower();
+    std::string lowerToUpper();//-32
+    std::string upperToLower();//+32
 
 };
 

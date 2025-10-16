@@ -28,6 +28,9 @@ void myString::setMyStringVar(const std::string & str)
   myStringVar = str ;
 }
 
+//////////////////////////////////////////
+//TO CHECK IF A STRING IS IN A CONTAINER//
+//////////////////////////////////////////
 bool myString::isIn(const std::vector <std::string> & vec)
 {
   bool results = false;
@@ -43,4 +46,20 @@ bool myString::isIn(const std::vector <std::string> & vec)
 
   return results ;
 
+}
+
+////////////////////////
+//STRING MODIFICATIONS//
+////////////////////////
+std::string myString::lowerToUpper()
+{
+  std::string results;
+  int chainSize = myStringVar.length();
+
+  for (int i=0; i<chainSize; i ++)
+    {
+      results += std::toupper(myStringVar[i]);
+    }
+
+  return results;
 }
