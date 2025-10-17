@@ -26,12 +26,13 @@ class myString
     std::string getMyStringVar();
     void setMyStringVar(const std::string &);
 
-    bool isIn(const std::vector <std::string> &);
+    template <typename container> 
+    bool isIn(const container &) const;
     std::string lowerToUpper();
     std::string upperToLower();
 
 };
 
+#include "templates.tpp"
     
 #endif//STRINGHEADER_H
-  

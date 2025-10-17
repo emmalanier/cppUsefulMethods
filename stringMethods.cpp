@@ -28,25 +28,6 @@ void myString::setMyStringVar(const std::string & str)
   myStringVar = str ;
 }
 
-//////////////////////////////////////////
-//TO CHECK IF A STRING IS IN A CONTAINER//
-//////////////////////////////////////////
-bool myString::isIn(const std::vector <std::string> & vec)
-{
-  bool results = false;
-
-  for(int i=0; i<vec.size(); i++)
-    {
-      if(myStringVar==vec[i])
-        {
-          results = true;
-          break;
-        }
-    }
-
-  return results ;
-
-}
 
 ////////////////////////
 //STRING MODIFICATIONS//

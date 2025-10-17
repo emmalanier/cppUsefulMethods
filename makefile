@@ -4,7 +4,7 @@
 
 # Par ex ici, definition d'une variable pour le choix du compilateur + option
 # Wall (all warning)
-GPP=g++ -Wall
+GPP=g++ -Wall -std=c++20 -Iinclude
 GSL_LIBS=-lgsl -lgslcblas -lm
 
 # La liste des executables a compiler est mise dans une variable EXE.

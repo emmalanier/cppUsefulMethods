@@ -17,17 +17,23 @@
 int main()
 {
   std::string mstr;
+  std::vector <std::string> myVecTest = { "Abc", "def", "ghi"};
   
   std::cout << "Text?" << std::endl;
   std::getline(std::cin, mstr);
 
   myString myString1(mstr);
-  myString1.setMyStringVar(myString1.upperToLower());
-  mstr = myString1.getMyStringVar();
+//  myString1.setMyStringVar(myString1.upperToLower());
+//  mstr = myString1.getMyStringVar();
+
+  if(myString1.isIn(myVecTest) == true)
+    std::cout<<"Test is in the vector"<<std::endl;
+  else
+    std::cerr<<"Test not in the vec" << std::endl;
 
 //  mstr = myString1.getMyStringVar();
 
-  std::cout << "New string is : "<< mstr << std::endl;
+//  std::cout << "New string is : "<< mstr << std::endl;
   
   return 0;
 }
