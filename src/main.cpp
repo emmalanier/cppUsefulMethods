@@ -22,8 +22,8 @@ int main()
   std::cout << "Text?" << std::endl;
   std::getline(std::cin, mstr);
 
-  myString myString1(mstr);
-//  myString1.setMyStringVar(myString1.upperToLower());
+  myString myString1;
+  myString1.setMyStringVar(mstr);
 //  mstr = myString1.getMyStringVar();
 
   if(myString1.isIn(myVecTest) == true)
